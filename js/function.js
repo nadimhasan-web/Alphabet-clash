@@ -1,3 +1,13 @@
+// hide element
+function hideElementById(elementId){
+    const hideElement = document.getElementById(elementId);
+    hideElement.classList.add('hidden');
+}
+// show element
+function showElementById(elementId){
+    const showElement = document.getElementById(elementId);
+    showElement.classList.remove('hidden');
+}
 function getRandomAlphabet(){
     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
     const alphabets = alphabetString.split('');
@@ -24,7 +34,7 @@ function getElementValueById(elementId){
     const value = parseInt(elementText);
     return value;
 }
-
+// set element value by Id
 function setElementValueById(elementId, value){
     const element = document.getElementById(elementId);
     element.innerText = value;
