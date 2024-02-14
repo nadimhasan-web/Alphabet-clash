@@ -13,3 +13,19 @@ function setLetterBg(elementId){
     const element = document.getElementById(elementId);
     element.classList.add('bg-orange-400');
 }
+function removeLetterBg(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.remove('bg-orange-400');
+}
+// score
+function getElementValueById(elementId){
+    const element = document.getElementById(elementId);
+    const elementText = element.innerText;
+    const value = parseInt(elementText);
+    return value;
+}
+
+function setElementValueById(elementId, value){
+    const element = document.getElementById(elementId);
+    element.innerText = value;
+}
