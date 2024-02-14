@@ -16,5 +16,20 @@ function play(){
     const playGroundScreen = document.getElementById('play_ground');
     playGroundScreen.classList.remove('hidden');
     continueGame();
-    
 }
+function handleButtonPress(event){
+    const playerPressed = event.key;
+    console.log('player pressed:',playerPressed);
+    // 
+    const currentAlphabet = document.getElementById('letter');
+    const currentAlphabetElement = currentAlphabet.innerText;
+    const expectedAlphabet = currentAlphabetElement.toLocaleLowerCase();
+    console.log(playerPressed, expectedAlphabet);
+    // check
+    if(playerPressed === expectedAlphabet){
+        console.log('you get a point');
+    }else{
+        console.log('you missed a point');
+    }
+}
+document.addEventListener('keyup', handleButtonPress);
