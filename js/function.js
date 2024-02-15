@@ -27,6 +27,12 @@ function removeLetterBg(elementId){
     const element = document.getElementById(elementId);
     element.classList.remove('bg-orange-400');
 }
+// get element text
+function getElementTextById(elementId){
+    const element = document.getElementById(elementId);
+    const text = element.innerText;
+    return text;
+}
 // score
 function getElementValueById(elementId){
     const element = document.getElementById(elementId);

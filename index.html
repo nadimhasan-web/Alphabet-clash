@@ -13,8 +13,8 @@
         <!-- home -->
         <section id="home" class=" flex items-center justify-center min-h-screen">
             <div class="flex flex-col items-center justify-center gap-10">
-                <h1 class="font_anton text-[100px] text-white">ALPHABET CLASH</h1>
-                <p class="font-poppins text-xl text-white">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+                <h1 class="font_anton mx-2 lg:mx-0 text-[40px] lg:text-[100px] text-white">ALPHABET CLASH</h1>
+                <p class="font-poppins text-xl text-center text-white">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
                 <button onclick="play()" class="btn text-black font_poppins">Play Now</button>
             </div>
         </section>
@@ -86,8 +86,8 @@
         <section id="score" class="hidden">
             <div class="flex justify-center items-center min-h-screen">
                 <div class="text-white font_poppins text-center space-y-4  bg-[#ffffff33] rounded-xl p-5">
-                    <h2 class="text-lg">Game over</h2>
-                    <h2 class="font-bold text-5xl">Score: 14</h2>
+                    <h2 class="text-lg">Game over !</h2>
+                    <h2 class="font-bold text-5xl">Score:<span id="last_score">14</span></h2>
                     <button onclick="playAgain()" class="btn font-bold text-black">Play again</button>
                     <p class="font-medium text-sm">Practice will make you Pro</p>
                 </div>
